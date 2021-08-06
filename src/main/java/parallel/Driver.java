@@ -16,9 +16,7 @@ public class Driver {
     private Driver(){}
 
     public static WebDriver getDriver(){
-        // Eğer driver nesnesi hafızada boşsa, oluşturulmamışsa yeniden oluşturmana gerek yok.
-        // Eğer null ise, yeniden oluşturabilirsin.
-        // Sadece ilk çağırıldığında bir tane nesne üret, sonraki çağırmalarda var olan nesnesi kullan.
+
         if(driver.get() == null){
             switch (ConfigurationReader.getProperty("browser")){
                 case "chrome":
