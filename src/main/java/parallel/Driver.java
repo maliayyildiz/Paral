@@ -19,6 +19,11 @@ public class Driver {
 
     public static WebDriver getDriver(){
 
+        //google
+
+        //firefox
+
+
         if(driver.get() == null){
             switch (ConfigurationReader.getProperty("browser")){
                 case "chrome":

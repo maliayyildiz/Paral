@@ -13,7 +13,7 @@ public class Deneme01
     public static void test(){
         Driver.getDriver().get("https://www.demoqa.com/");
         System.out.println(Driver.getDriver().getTitle());
-
+        System.out.println("smoke2");
     }
 
     @Test
