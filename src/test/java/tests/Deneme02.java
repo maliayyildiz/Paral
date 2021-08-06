@@ -10,10 +10,16 @@ import java.util.concurrent.TimeUnit;
 public class Deneme02
 {
 
-    @Test(groups = {"smoke"})
+    @Test
     public static void test(){
         Driver.getDriver().get("https://www.demoqa.com/");
         System.out.println(Driver.getDriver().getTitle());
+
+    }
+    @Test(groups = {"smokeTest"})
+    public static void test01(){
+        Driver.getDriver().get("https://www.demoqa.com/");
+        System.out.println("smoke");
 
     }
 }

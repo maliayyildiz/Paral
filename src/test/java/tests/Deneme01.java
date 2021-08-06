@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Deneme01
 {
-    @Test(groups = {"smoke"})
+    @Test
     public static void test(){
         Driver.getDriver().get("https://www.demoqa.com/");
         System.out.println(Driver.getDriver().getTitle());
