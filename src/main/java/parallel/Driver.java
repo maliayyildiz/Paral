@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Driver {
 
@@ -41,6 +43,8 @@ public class Driver {
                     break;
             }
         }
+        driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get().manage().window().maximize();
         return driver.get();
     }
 
